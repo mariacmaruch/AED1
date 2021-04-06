@@ -34,20 +34,20 @@ int main()
     do
     {
         printf("\nMenu\n");
-        printf("1-ExercÌcio 1\n");
-        printf("2-ExercÌcio 2\n");
-        printf("3-ExercÌcio 3\n");
-        printf("4-ExercÌcio 4\n");
-        printf("5-ExercÌcio 5\n");
-        printf("6-ExercÌcio 6\n");
-        printf("7-ExercÌcio 7\n");
-        printf("8-ExercÌcio 8\n");
-        printf("9-ExercÌcio 9\n");
-        printf("10-ExercÌcio 10\n");
-        printf("11-ExercÌcio 11\n");
-        printf("12-ExercÌcio 12\n");
+        printf("1-Exerc√≠cio 1\n");
+        printf("2-Exerc√≠cio 2\n");
+        printf("3-Exerc√≠cio 3\n");
+        printf("4-Exerc√≠cio 4\n");
+        printf("5-Exerc√≠cio 5\n");
+        printf("6-Exerc√≠cio 6\n");
+        printf("7-Exerc√≠cio 7\n");
+        printf("8-Exerc√≠cio 8\n");
+        printf("9-Exerc√≠cio 9\n");
+        printf("10-Exerc√≠cio 10\n");
+        printf("11-Exerc√≠cio 11\n");
+        printf("12-Exerc√≠cio 12\n");
         printf("15- Sair do programa\n");
-        printf("Digite o cÛdigo do exercÌcio que deseja ver:");
+        printf("Digite o c√≥digo do exerc√≠cio que deseja ver:");
         scanf("%d", &op);
         switch(op)
         {
@@ -73,15 +73,11 @@ int main()
             ex7();
             break;
         case 8:
-
             ex8();
             break;
         case 9:
             ex9();
             break;
-        /*case 10:
-            ex10();
-            break;*/
         case 11:
             ex11();
             break;
@@ -96,8 +92,8 @@ int main()
     return 0;
 }
 
-/*1 ) Escrever uma funÁ„o que peÁa ao usu·rio um valor, caso o valor seja menor do que zero mostre a mensagem ìValor
-dever· ser maior ou igual a zeroî e peÁa novamente um novo n˙mero. A funÁ„o sÛ poder· retornar um valor v·lido.*/
+/*1 ) Escrever uma fun√ß√£o que pe√ßa ao usu√°rio um valor, caso o valor seja menor do que zero mostre a mensagem ‚ÄúValor
+dever√° ser maior ou igual a zero‚Äù e pe√ßa novamente um novo n√∫mero. A fun√ß√£o s√≥ poder√° retornar um valor v√°lido.*/
 
 int ex1()
 {
@@ -105,7 +101,7 @@ int ex1()
     printf("\n1-Digite um valor:");
     scanf("%d", &n);
     valido= maiorZero (n);
-    printf("Valor v·lido=%d\n", valido);
+    printf("Valor v√°lido=%d\n", valido);
     return 0;
 }
 
@@ -113,21 +109,21 @@ int maiorZero (int num)
 {
     if (num<0)
     {
-        printf("Valor dever· ser maior ou igual a zero\n");
+        printf("Valor dever√° ser maior ou igual a zero\n");
         printf("Digite um novo valor:");
         scanf("%d", &num);
     }
     return num;
 }
 
-/*2) Escrever uma funÁ„o para retornar o valor da hipotenusa de um tri‚ngulo ret‚ngulo dado os valores dos catetos.*/
+/*2) Escrever uma fun√ß√£o para retornar o valor da hipotenusa de um tri√¢ngulo ret√¢ngulo dado os valores dos catetos.*/
 
 int ex2()
 {
     float resp,c1,c2;
-    printf("\n2-Digite o valor do primeiro cacteto do tri‚ngulo:");
+    printf("\n2-Digite o valor do primeiro cacteto do tri√¢ngulo:");
     scanf("%f", &c1);
-    printf("Digite o valor do segundo cacteto do tri‚ngulo:");
+    printf("Digite o valor do segundo cacteto do tri√¢ngulo:");
     scanf("%f", &c2);
     resp= potencia(c1,c2);
     printf("Valor da hipotenusa=%.2f\n", resp);
@@ -141,8 +137,8 @@ float potencia(float a, float b)
     return resp=(sqrt(soma));
 }
 
-/*3) FaÁa um programa principal que leia um conjunto indeterminado de valores (cada valor correspondendo a um cateto de
-um triangulo ret‚ngulo) e imprima o valor da hipotenusa. (Utilize as funÁıes criadas nos exercÌcios 1 e 2) ñ (FLAG 0).*/
+/*3) Fa√ßa um programa principal que leia um conjunto indeterminado de valores (cada valor correspondendo a um cateto de
+um triangulo ret√¢ngulo) e imprima o valor da hipotenusa. (Utilize as fun√ß√µes criadas nos exerc√≠cios 1 e 2) ‚Äì (FLAG 0).*/
 
 int ex3()
 {
@@ -160,16 +156,16 @@ int ex3()
     return 0;
 }
 
-/*4) Construa um mÈtodo que verifique se um ano qualquer È bissexto ou n„o. Projete o par‚metros de entrada (inteiro e
+/*4) Construa um m√©todo que verifique se um ano qualquer √© bissexto ou n√£o. Projete o par√¢metros de entrada (inteiro e
 positivo) e o valor de retorno.
 Teste-o a partir de main().
 Para ser bissexto, o ano deve ser:
-DivisÌvel por 4. N„o pode ser divisÌvel por 100. Pode ser que seja divisÌvel por 400.*/
+Divis√≠vel por 4. N√£o pode ser divis√≠vel por 100. Pode ser que seja divis√≠vel por 400.*/
 
 int ex4()
 {
     int ano;
-    printf("\n4-Digite o ano que deseja verificar se È bissexto:");
+    printf("\n4-Digite o ano que deseja verificar se √© bissexto:");
     scanf("%d",&ano);
     bissexto (ano);
     return 0;
@@ -181,44 +177,44 @@ int bissexto (int ano)
     if (((ano%4==0) && (ano%100!=0)) || (ano%400==0))
     {
 
-        printf("%d È bissexto!\n", ano);
+        printf("%d √© bissexto!\n", ano);
 
     }
     else
     {
-        printf("%d n„o È bissexto!\n", ano);
+        printf("%d n√£o √© bissexto!\n", ano);
 
     }
     return ano;
 }
 
 /*5) Fazer um algoritmo para :
-- definir uma funÁ„o para determinar se um n˙mero inteiro È divisÌvel por outro;
-- ler um n˙mero indeterminado de pares de dados inteiros;
-- o ˙ltimo par de dados ser· igual a (zero, zero) e n„o dever· ser considerado;
-- usando a funÁ„o, mostrar que pares lidos tÍm o primeiro valor divisÌvel pelo segundo.*/
+- definir uma fun√ß√£o para determinar se um n√∫mero inteiro √© divis√≠vel por outro;
+- ler um n√∫mero indeterminado de pares de dados inteiros;
+- o √∫ltimo par de dados ser√° igual a (zero, zero) e n√£o dever√° ser considerado;
+- usando a fun√ß√£o, mostrar que pares lidos t√™m o primeiro valor divis√≠vel pelo segundo.*/
 
 
 int ex5()
 {
     int x,y,resp;
 
-    printf("\n5-Digite o primeiro n˙mero do par:");
+    printf("\n5-Digite o primeiro n√∫mero do par:");
     scanf("%d", &x);
-    printf("Digite o segundo n˙mero do par:");
+    printf("Digite o segundo n√∫mero do par:");
     scanf("%d", &y);
 
     resp=divisao(x,y);
-    printf("… divisÌvel? %d\n", resp);
+    printf("√â divis√≠vel? %d\n", resp);
 
     while (x!=0 && y!=0)
     {
-        printf("\nDigite o primeiro n˙mero do par:");
+        printf("\nDigite o primeiro n√∫mero do par:");
         scanf("%d", &x);
-        printf("Digite o segundo n˙mero do par:");
+        printf("Digite o segundo n√∫mero do par:");
         scanf("%d", &y);
         resp=divisao(x,y);
-        printf("… divisÌvel? %d\n", resp);
+        printf("√â divis√≠vel? %d\n", resp);
     }
 
     return 0;
@@ -233,9 +229,9 @@ int divisao (int a, int b)
     return (a%b==0);
 }
 
-/*6) FaÁa uma funÁ„o que receba como par‚metro de entrada o cÛdigo de um produto, e como par‚metro de saÌda ir· disponibilizar
-o preÁo da mercadoria de acordo com a tabela abaixo:
-CÛdigo PreÁo
+/*6) Fa√ßa uma fun√ß√£o que receba como par√¢metro de entrada o c√≥digo de um produto, e como par√¢metro de sa√≠da ir√° disponibilizar
+o pre√ßo da mercadoria de acordo com a tabela abaixo:
+C√≥digo Pre√ßo
 100 1,20
 101 1,50
 102 2,50
@@ -246,9 +242,9 @@ int ex6()
     int cod;
     float valor;
     printf("\n6-Mercadorias:\n");
-    printf("CÛdigo PreÁo\n");
+    printf("C√≥digo Pre√ßo\n");
     printf(" 100   1,20\n 101   1,50\n 102   2,50\n 103   2,75\n");
-    printf("Digite o cÛdigo do produto que deseja:");
+    printf("Digite o c√≥digo do produto que deseja:");
     scanf("%d", &cod);
     valor = tabela (cod);
     printf("%d = R$%.2f\n", cod, valor);
@@ -273,24 +269,24 @@ float tabela (int num)
         valor=2.75;
         break;
     default:
-        printf("Erro! CÛdigo inv·lido\n");
+        printf("Erro! C√≥digo inv√°lido\n");
         system("pause");
     }
     return valor;
 }
 
-/*7) FaÁa um programa que utilize a funÁ„o do exercÌcio anterior. Este programa ir· pedir ao usu·rio v·rios cÛdigos
-e quantidades dos produtos. Para cada par de valores dever· chamar a funÁ„o para obter o preÁo da mercadoria
-e devolver ao usu·rio o valor total ñ ao final de todos os cÛdigos (flag cÛdigo =0)
-o programa dever· mostrar o valor total da compra. Obs caso o cÛdigo n„o exista na tabela dever· mostrar uma
-mensagem de erro e pedir novo cÛdigo*/
+/*7) Fa√ßa um programa que utilize a fun√ß√£o do exerc√≠cio anterior. Este programa ir√° pedir ao usu√°rio v√°rios c√≥digos
+e quantidades dos produtos. Para cada par de valores dever√° chamar a fun√ß√£o para obter o pre√ßo da mercadoria
+e devolver ao usu√°rio o valor total ‚Äì ao final de todos os c√≥digos (flag c√≥digo =0)
+o programa dever√° mostrar o valor total da compra. Obs caso o c√≥digo n√£o exista na tabela dever√° mostrar uma
+mensagem de erro e pedir novo c√≥digo*/
 
 int ex7()
 {
     int cod, quant;
     float valor, total,soma=0;
     printf("\n7-Se desejar sair do programa digite 0!\n");
-    printf("De acordo com as mercadorias do execÌcio anterior, digite o cÛdigo do produto que deseja:");
+    printf("De acordo com as mercadorias do exec√≠cio anterior, digite o c√≥digo do produto que deseja:");
     scanf("%d", &cod);
     while(cod != 0)
     {
@@ -301,12 +297,12 @@ int ex7()
             scanf("%d", &quant);
             total= valor*quant;
             soma=total+soma;
-            printf("\nDigite o cÛdigo do produto que deseja:");
+            printf("\nDigite o c√≥digo do produto que deseja:");
             scanf("%d", &cod);
         }
         else
         {
-            printf("Erro! Digite cÛdigo v·lido:");
+            printf("Erro! Digite c√≥digo v√°lido:");
             scanf("%d", &cod);
         }
     }
@@ -314,15 +310,15 @@ int ex7()
     return 0;
 }
 
-/*8) Construa um mÈtodo que calcule e retorne o k-Èsimo termo Fibonacci.
-Par‚metros de entrada: a posiÁ„o do termo na sequÍncia Fibonacci.
+/*8) Construa um m√©todo que calcule e retorne o k-√©simo termo Fibonacci.
+Par√¢metros de entrada: a posi√ß√£o do termo na sequ√™ncia Fibonacci.
 Valor de retorno: o termo Fibonacci.
-Teste o mÈtodo a partir de main().*/
+Teste o m√©todo a partir de main().*/
 
 int ex8()
 {
     int n,termo;
-    printf("\n8-Digite a posiÁ„o do termo que deseja visualizar:");
+    printf("\n8-Digite a posi√ß√£o do termo que deseja visualizar:");
     scanf("%d", &n);
     termo=fibonacci(n);
     printf("Fibonacci %d= %d\n", n, termo);
@@ -341,8 +337,8 @@ int fibonacci(int n)
     }
 }
 
-/*9) Construa um mÈtodo que calcule a potenciaÁ„o. Projete os par‚metros de entrada (inteiros e positivos)
-e o valor de retorno. Teste-o a partir de main(). Obs. VocÍ n„o pode utilizar a funÁ„o pow*/
+/*9) Construa um m√©todo que calcule a potencia√ß√£o. Projete os par√¢metros de entrada (inteiros e positivos)
+e o valor de retorno. Teste-o a partir de main(). Obs. Voc√™ n√£o pode utilizar a fun√ß√£o pow*/
 
 int ex9()
 {
@@ -369,52 +365,8 @@ float pot(int b, int p)
     }
 }
 
-/*10) Elabore um procedimento para calcular o dÌgito verificador de um CPF, dever· receber como par‚metro de
-entrada uma string com os 9 primeiros dÌgitos do cpf e dever· devolver dois par‚metros um com o primeiro digito
-e outro com o segundo digito. Teste o mÈtodo a partir de main().*/
-
-/* ERRO!
-
-int ex10()
-{
-    char cpf[9];
-    int digito,d1,d2,calculo=0;
-    calculo=vf_cpf(cpf[9],&d1,&d2);
-    printf("Digitos verificadores do CPF: %d %d", d1,d2);
-    return 0;
-}
-
-int vf_cpf(char cpf[9],int *d1, int *d2)
-{
-    int i,aux1=10,aux2=11,digito;
-    printf("Digite os 9 primeiros dÌgitos do CPF:");
-    scanf("%d", &digito);
-    cpf=atoi(digito);
-    for(i=0; cpf[i]!='\0'; i++)
-    {
-        *d1+=cpf[i]*aux1;
-        *d2+=cpf[i]*aux2;
-        aux1--;
-        aux2--;
-    }
-
-    *d1=(*d1*10)%11;
-    if(*d1==10)
-    {
-        *d1=0;
-    }
-    *d2+=(*d2*10)%11;
-    if(*d2==10)
-    {
-        *d2=0;
-    }
-    return (*d1,*d2);
-
-}
-*/
-
-/*11 - FaÁa uma funÁ„o que receba como par‚metro de entrada o n˙mero de termos e o valor de x e calcule seu cosseno
-utilizando a seguinte express„o: Teste a funÁ„o a partir do main() cos(x,n)=1-x≤/2!+x4/2!-x6/6!+.. */
+/*11 - Fa√ßa uma fun√ß√£o que receba como par√¢metro de entrada o n√∫mero de termos e o valor de x e calcule seu cosseno
+utilizando a seguinte express√£o: Teste a fun√ß√£o a partir do main() cos(x,n)=1-x¬≤/2!+x4/2!-x6/6!+.. */
 
 int ex11()
 {
@@ -425,7 +377,7 @@ int ex11()
     printf("\nDigite o valor de x:");
     scanf("%d",&x);
     resp=calc_exp(n,x);
-    printf("Resultado da express„o=%.2f\n", resp);
+    printf("Resultado da express√£o=%.2f\n", resp);
     return 0;
 }
 
