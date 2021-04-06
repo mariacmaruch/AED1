@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1606406493 source:c:\users\faelc\desktop\eu\trabalhos pessoais\2020\puc\aed\dados_heterogeneo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+

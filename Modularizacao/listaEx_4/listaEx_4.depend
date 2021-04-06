@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1604580517 source:c:\users\maria clara\onedrive\aed\listaex_4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<math.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1604888213 source:c:\users\maria clara\onedrive\aed\recursiva_fun\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
